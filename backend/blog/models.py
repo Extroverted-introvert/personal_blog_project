@@ -25,6 +25,7 @@ class BlogPost(models.Model):
     month = models.CharField(max_length=3)
     day = models.CharField(max_length=2)
     content = models.TextField()
+    category_featured = models.BooleanField(default=False)
     featured = models.BooleanField(default=False)
     date_created = models.DateTimeField(default=datetime.now, blank=True)
 
@@ -49,6 +50,15 @@ class BlogPost(models.Model):
                     temp.save()
             except BlogPost.DoesNotExist:
                 pass
+        
+        if self.category_featured:
+            try:
+                temp = BlogPost.objects.get(category_featured=True, category=self.category)
+                if self != temp:
+                    temp.category_featured = False
+                    temp.save()
+            except BlogPost.DoesNotExist:
+                pass    
         
         super(BlogPost, self).save(*args, **kwargs)
 
