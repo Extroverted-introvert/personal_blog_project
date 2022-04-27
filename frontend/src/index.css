@@ -26,13 +26,13 @@
       url("./assets/fonts/GoogleSans-Italic.ttf") format("woff");
   }
   @font-face {
-    font-family: "Google Sans Medium";
-    src: local("Google Sans Medium"),
+    font-family: "Goofle Sans Regular";
+    src: local("Goofle Sans Regular"),
       url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
   }
   @font-face {
-    font-family: "Google Sans Medium Italic";
-    src: local("Google Sans Medium Italic"),
+    font-family: "Goofle Sans Regular Italic";
+    src: local("Goofle Sans Regular Italic"),
       url("./assets/fonts/GoogleSans-MediumItalic.ttf") format("woff");
   }
   @font-face {

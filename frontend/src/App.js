@@ -7,6 +7,7 @@ import BlogDetail from './components/BlogDetail/BlogDetail.js';
 import Category from './components/Category/Category.js';
 import Splash from './components/Splash/Splash.js';
 import Contact from './components/contact/ContactComponent.js'
+import Gallery from './components/Gallery/Gallery';
 
 const App = () => (
     <Router>
@@ -18,6 +19,7 @@ const App = () => (
                 <Route exact path='/category/:id' component={Category} />
                 <Route exact path='/blog/:id' component={BlogDetail} />
                 <Route exact path='/contact' component={Contact} />
+                {/* <Route exact path='/gallery' component={Gallery} /> */}
             </Switch>
         </Layout>
     </Router>

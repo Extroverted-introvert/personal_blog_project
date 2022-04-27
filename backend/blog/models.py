@@ -4,16 +4,16 @@ from django.template.defaultfilters import slugify
 
 class Categories(models.TextChoices):
     WORLD = 'world'
-    ENVIRONMENT = 'environment'
+    # ENVIRONMENT = 'environment'
     TECHNOLOGY = 'technology'
-    DESIGN = 'design'
+    # DESIGN = 'design'
     CULTURE = 'culture'
-    BUSINESS = 'business'
-    POLITICS = 'politics'
+    # BUSINESS = 'business'
+    # POLITICS = 'politics'
     OPINION = 'opinion'
-    SCIENCE = 'science'
-    HEALTH = 'health'
-    STYLE = 'style'
+    # SCIENCE = 'science'
+    # HEALTH = 'health'
+    # STYLE = 'style'
     TRAVEL = 'travel'
 
 class BlogPost(models.Model):
